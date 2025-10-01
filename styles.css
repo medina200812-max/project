@@ -1,0 +1,537 @@
+html,
+body {
+  font-family: Helvetica, "Helvetica Neue", Arial, "Lucida Grande", sans-serif;
+  margin: 0;
+}
+video {
+  width: 100%;
+}
+.heading {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  border-bottom: 1px solid rgb(178, 178, 178);
+}
+.head-left {
+  display: flex;
+  align-items: center;
+  gap: 26px;
+  font-size: 14px;
+  color: gray;
+  padding-left: 10px;
+  font-weight: 50;
+}
+.head-left a {
+  text-decoration: none;
+  color: black;
+}
+.head-left a:hover {
+  text-decoration-line: underline;
+  text-decoration-style: solid;
+  text-decoration-color: black;
+}
+.head-right {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+select {
+  outline: none;
+  border: none;
+  width: 90px;
+}
+.head-img img {
+  height: 30px;
+}
+.head-right img {
+  cursor: pointer;
+}
+.banner {
+  width: 100%;
+  height: auto;
+  position: relative;
+  z-index: 1;
+}
+.shop-now {
+  position: absolute;
+  top: 630px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+  background-color: rgba(255, 255, 255, 0);
+  color: white;
+  font-weight: 600;
+  padding: 11px;
+  font-size: 25px;
+  border: 1px solid white;
+  cursor: pointer;
+}
+
+.arrivals {
+  display: flex;
+  gap: 40px;
+  padding: 40px 25px 30px;
+}
+.arrivals a {
+  color: rgb(168, 168, 168);
+  text-decoration: none;
+  font-size: 17px;
+  font-weight: 60;
+}
+.arrivals a:hover {
+  color: black;
+}
+.clothes {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(2, 450px);
+  gap: 18px;
+  padding: 0 20px;
+}
+.box1,
+.box2,
+.box3,
+.box4,
+.box5,
+.box6,
+.box7,
+.box8,
+.box9,
+.box10,
+.box11,
+.box12,
+.box13,
+.box14,
+.box15,
+.box16,
+.box17,
+.box18,
+.box19,
+.box20 {
+  position: relative;
+}
+.box1 img,
+.box2 img,
+.box3 img,
+.box4 img,
+.box5 img,
+.box6 img,
+.box7 img,
+.box8 img,
+.box9 img,
+.box10 img,
+.box11 img,
+.box12 img,
+.box13 img,
+.box14 img,
+.box15 img,
+.box16 img,
+.box17 img,
+.box18 img,
+.box19 img,
+.box20 img {
+ 
+  width: 100%;
+  height: 100%;
+  transition: opacity 0.4s;
+}
+.box1 img.hover-img,
+.box2 img.hover-img,
+.box3 img.hover-img,
+.box4 img.hover-img,
+.box5 img.hover-img,
+.box6 img.hover-img,
+.box7 img.hover-img,
+.box8 img.hover-img,
+.box9 img.hover-img,
+.box10 img.hover-img,
+.box11 img.hover-img,
+.box12 img.hover-img,
+.box13 img.hover-img,
+.box14 img.hover-img,
+.box15 img.hover-img,
+.box16 img.hover-img,
+.box17 img.hover-img,
+.box18 img.hover-img,
+.box19 img.hover-img,
+.box20 img.hover-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+.box1:hover img.hover-img,
+.box2:hover img.hover-img,
+.box3:hover img.hover-img,
+.box4:hover img.hover-img,
+.box5:hover img.hover-img,
+.box6:hover img.hover-img,
+.box7:hover img.hover-img,
+.box8:hover img.hover-img,
+.box9:hover img.hover-img,
+.box10:hover img.hover-img,
+.box11:hover img.hover-img,
+.box12:hover img.hover-img,
+.box13:hover img.hover-img,
+.box14:hover img.hover-img,
+.box15:hover img.hover-img,
+.box16:hover img.hover-img,
+.box17:hover img.hover-img,
+.box18:hover img.hover-img,
+.box19:hover img.hover-img,
+.box20:hover img.hover-img {
+  opacity: 1;
+}
+.clothes .container p {
+  color: #222;
+  font-size: 13px;
+  font-weight: 100;
+}
+.view-all button {
+  background-color: rgba(255, 255, 255, 0);
+  color: black;
+  font-weight: 100;
+  padding: 14px;
+  font-size: 16px;
+  border: 1px solid black;
+  cursor: pointer;
+}
+.view-all {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin: 30px 0;
+}
+.scrol {
+  width: 1400px;
+  height: 450px;
+  display: flex;
+  gap: 10px; 
+  overflow-x: auto; 
+  padding: 20px;
+ 
+}
+.images-scrol {
+  cursor: pointer;
+  width: 350px;
+  height: 90%;
+}
+.box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: rgb(65, 65, 65);
+  font-size: 15px;
+}
+
+.footer-content {
+  width: 100%;
+  color: black;
+  padding: 29px 0;
+  margin-top: 48px;
+  font-size: 15px;
+  border-top: 1px SOLID rgb(197, 197, 197);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.footer-logo {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.footer-links {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.footer-links a {
+  color: black;
+  text-decoration: underline;
+}
+
+.footer-contact {
+  display: flex;
+  flex-direction: column;
+  font-size: 15px;
+}
+.footer-contact a {
+  color: black;
+  text-decoration: underline;
+}
+.login-page {
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.85);
+}
+.login-container {
+  width: 380px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+.login-container h2 {
+  font-size: 36px;
+  font-weight: 100;
+  color: #181818;
+  text-align: center;
+}
+.input {
+  display: flex;
+  flex-direction: column;
+  font-weight: 100;
+}
+
+.input input {
+  padding: 16px 18px;
+  border: 1px solid rgb(224, 224, 224);
+  font-size: 15px;
+  background: white;
+  outline: none;
+}
+.login-button {
+  margin-top: 10px;
+  padding: 13px 0;
+  background: white;
+  color: black;
+  border: 1px solid black;
+  font-size: 15px;
+  font-weight: 100;
+  cursor: pointer;
+}
+.login-button:hover {
+  background-color: #222;
+  color: white;
+}
+.login-links {
+  display: flex;
+  justify-content: center;
+  font-size: 14px;
+}
+.login-links a {
+  text-decoration: underline;
+  color: black;
+}
+video {
+  position: relative;
+  z-index: 1;
+}
+video h1 {
+  position: absolute;
+  z-index: 10;
+  color: red;
+  top: 20px;
+}
+.topic {
+  font-size: 25px;
+  font-weight: 100;
+  padding: 20px 20px 0;
+}
+
+@media (max-width: 780px) {
+  .heading {
+    padding: 10px 15px;
+  }
+
+  .head-left {
+    gap: 20px;
+    font-size: 13px;
+  }
+
+  .head-right {
+    gap: 8px;
+    font-size: 13px;
+  }
+
+  .head-right img {
+    height: 26px;
+  }
+
+  .shop-now {
+    top: 350px;
+    font-size: 18px;
+    padding: 10px 14px;
+
+  }
+
+  .arrivals {
+    gap: 20px;
+    padding: 25px 15px;
+    font-size: 15px;
+    flex-wrap: wrap;
+  }
+
+  .clothes {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    gap: 14px;
+    padding: 0 15px;
+  }
+
+  .clothes .container p {
+    font-size: 13px;
+  }
+
+  .view-all button {
+    padding: 12px;
+    font-size: 15px;
+  }
+
+  .scrol {
+    width: 100%;
+    height: auto;
+    gap: 10px;
+    padding: 15px;
+  }
+
+  .images-scrol {
+    width: 220px;
+    height: auto;
+  }
+
+  .box {
+    font-size: 14px;
+  }
+
+  .footer-content {
+    flex-direction: column;
+    gap: 25px;
+    text-align: center;
+  }
+
+  .footer-logo,
+  .footer-links,
+  .footer-contact {
+    align-items: center;
+    font-size: 14px;
+  }
+
+  .login-container {
+    width: 320px;
+    padding: 0 20px;
+  }
+
+  .login-container h2 {
+    font-size: 28px;
+  }
+
+  .input input {
+    padding: 14px;
+    font-size: 14px;
+  }
+
+  .login-button {
+    font-size: 14px;
+    padding: 11px 0;
+  }
+}
+@media (max-width: 480px) {
+  .heading {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 10px;
+  }
+
+  .head-left {
+    gap: 15px;
+    font-size: 12px;
+    padding-left: 0;
+    flex-wrap: wrap;
+  }
+
+  .head-right {
+    gap: 8px;
+    font-size: 12px;
+    flex-wrap: wrap;
+  }
+
+  .head-right img {
+    height: 24px;
+  }
+
+  .shop-now {
+    top: 290px;
+    font-size: 16px;
+    padding: 8px 12px;
+  }
+
+  .arrivals {
+    gap: 15px;
+    padding: 20px 10px;
+    flex-wrap: wrap;
+    font-size: 14px;
+  }
+
+  .clothes {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    gap: 12px;
+    padding: 0 10px;
+  }
+
+  .clothes .container p {
+    font-size: 12px;
+  }
+
+  .view-all button {
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  .scrol {
+    width: 100%;
+    height: auto;
+    gap: 8px;
+    padding: 10px;
+  }
+
+  .images-scrol {
+    width: 160px;
+    height: auto;
+  }
+
+  .box {
+    font-size: 13px;
+  }
+
+  .footer-content {
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+  }
+
+  .footer-logo,
+  .footer-links,
+  .footer-contact {
+    align-items: center;
+    font-size: 14px;
+  }
+
+  .login-container {
+    width: 100%;
+    padding: 0 15px;
+  }
+
+  .login-container h2 {
+    font-size: 24px;
+  }
+
+  .input input {
+    padding: 12px;
+    font-size: 14px;
+  }
+
+  .login-button {
+    font-size: 14px;
+    padding: 10px 0;
+  }
+}
